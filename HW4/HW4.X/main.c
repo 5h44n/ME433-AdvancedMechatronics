@@ -1,7 +1,6 @@
-#include<xc.h>           // processor SFR definitions
-#include<sys/attribs.h>  // __ISR macro
-
-#define DELAYTIME 1250000 // delay time of 1250000*40 = 50000000ns = 0.05s
+#include <xc.h>             // processor SFR definitions
+#include <sys/attribs.h>    // __ISR macro
+#include <math.h>           // sine function
 
 // DEVCFG0
 #pragma config DEBUG = OFF // no debugging
@@ -19,7 +18,7 @@
 #pragma config OSCIOFNC = OFF // disable secondary osc
 #pragma config FPBDIV = DIV_1 // divide sysclk freq by 1 for peripheral bus clock
 #pragma config FCKSM = CSDCMD // do not enable clock switch
-#pragma config WDTPS = PS1 // use slowest wdt
+#pragma config WDTPS = PS1048576 // use slowest wdt
 #pragma config WINDIS = OFF // wdt no window mode
 #pragma config FWDTEN = OFF // wdt disabled
 #pragma config FWDTWINSZ = WINSZ_25 // wdt window at 25%
@@ -28,8 +27,9 @@
 #pragma config FPLLIDIV = DIV_2 // divide input clock to be in range 4-5MHz
 #pragma config FPLLMUL = MUL_24 // multiply clock after FPLLIDIV
 #pragma config FPLLODIV = DIV_2 // divide clock after FPLLMUL to get 48MHz
-#pragma config UPLLIDIV = DIV_2 // divider for the 8MHz input clock, then multiplied by 12 to get 48MHz for USB
+#pragma config UPLLIDIV = DIV_12 // divider for the 8MHz input clock, then multiplied by 12 to get 48MHz for USB
 #pragma config UPLLEN = ON // USB clock on
+
 
 // DEVCFG3
 #pragma config USERID = 0 // some 16bit userid, doesn't matter what
@@ -38,6 +38,7 @@
 #pragma config FUSBIDIO = ON // USB pins controlled by USB module
 #pragma config FVBUSONIO = ON // USB BUSON controlled by USB module
 
+#include "spi.h"            // spi library w/ appropriate configurations
 
 int main() {
 
@@ -57,21 +58,13 @@ int main() {
 
     // do your TRIS and LAT commands here
     
-    TRISBbits.TRISB4 = 1;   // configure pin B4 as input (BUTTON)
-    TRISAbits.TRISA4 = 0;   // configure pin A4 as output (LED)
-    LATAbits.LATA4 = 1;     // initialize LED on
+    TRISAbits.TRISA4 = 0;	// RA4 (LED) = output
+	TRISBbits.TRISB4 = 1;	// RB4 (BUTTON) = input
+	LATAbits.LATA4 = 1;		// Turn on LED as default
 
     __builtin_enable_interrupts();
-    
-    _CP0_SET_COUNT(0);
 
     while(1) {
-        if (!PORTBbits.RB4) {
-            LATAbits.LATA4 = 0; // if button is pressed, LED turns off
-        }
-        else if (_CP0_GET_COUNT() > DELAYTIME)    {
-            LATAINV = 0b10000;   // toggle LED
-            _CP0_SET_COUNT(0);  // reset clock        
-        }
-    }   // end of infinite loop
+	    
+    }
 }
