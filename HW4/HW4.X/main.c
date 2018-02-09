@@ -58,8 +58,8 @@ int main() {
 
     // do your TRIS and LAT commands here
     
-    TRISAbits.TRISA4 = 0;	// RA4 (LED) = output
-	TRISBbits.TRISB4 = 1;	// RB4 (BUTTON) = input
+    TRISAbits.TRISA4 = 0;	// A4 (LED) = output
+	TRISBbits.TRISB4 = 1;	// B4 (BUTTON) = input
 	LATAbits.LATA4 = 1;		// Turn on LED as default
 
     __builtin_enable_interrupts();

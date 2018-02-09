@@ -2,7 +2,6 @@
 // Shaan Savarirayan
 // 1.29.2018
 
-#include <proc/p32mx250f128b.h>
 #include "spi.h"
 
 #define CS LATBbits.LATB15  // chip select pin
@@ -22,7 +21,7 @@ void initSPI1(void) {
     SPI1BRG = 0x1;                          // fastest baud rate, 20 MHz [SPI1BRG = (80000000/2*desired)-1]
     SPI1STATbits.SPIROV = 0;                // clears overflow bit
     SPI1CONbits.MSTEN = 1;                  // master mode
-	SPI1CONbits.CKE = 1;                    // data changes when clock goes from hi to lo
+    SPI1CONbits.CKE = 1;                    // data changes when clock goes from hi to lo
     SPI1CONbits.ON = 1;                     // turns on SPI1
    
 }

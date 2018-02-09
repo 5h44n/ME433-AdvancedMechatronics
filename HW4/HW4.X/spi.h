@@ -13,8 +13,8 @@
 
 void initSPI1(void);
 unsigned char SPI1_io(unsigned char data);
-void setVoltage(char channel,unsigned char voltage);
 unsigned short MCPdata(unsigned char channel, unsigned char data);
+void setVoltage(char channel,unsigned char voltage);
 
 #endif	/* SPI_H */
  

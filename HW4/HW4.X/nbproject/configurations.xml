@@ -22,6 +22,7 @@
     <itemPath>spi.c</itemPath>
     <itemPath>spi.h</itemPath>
     <itemPath>waves.c</itemPath>
+    <itemPath>waves.h</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
