@@ -1,7 +1,7 @@
 #include<xc.h>           // processor SFR definitions
 #include<sys/attribs.h>  // __ISR macro
 
-#define DELAYTIME 1250000 // delay time of 1250000*40 = 50000000ns = 0.05s
+#define DELAYTIME 1250000 // delay time of 1250000*40ns = 50000000ns = 0.05s (counter is 25 MHz)
 
 // DEVCFG0
 #pragma config DEBUG = OFF // no debugging

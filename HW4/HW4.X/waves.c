@@ -3,26 +3,27 @@
 // 1.31.2018
 
 #include <waves.h>
+#include <math.h>
 
 #define pi 3.14159
 #define SINLEN 100
 #define TRILEN 200
 
-static volatile unsigned short sinwave
-static volatile unsigned short triwave
+static volatile unsigned short sinvec;
+static volatile unsigned short trivec;
 
-void sinwave(void) {
-	for (int i=0,i<SINLEN,i++)	{
-		sinwave[i] = 127.5*sin((double)2*PI*i/(SINLEN))+127.5;
+void sinwave(void)  {
+	for (int i=0; i<SINLEN; i++)  {
+		sinvec[i] = 127.5*sin((double)2*PI*i/(SINLEN))+127.5;   //  creates 10 Hz sin wave 
 	}
-	return sinwave;
+	return sinvec;
 }
 
 void triwave(void)  {	
-    for (int i=0; i<TRILEN; i++){
-		triwave[i] = 255*((double)i/TRILEN);
+    for (int j=0; j<TRILEN; j++)    {
+		trivec[j] = 255*((double)j/TRILEN);                     //  creates 5 Hz tri wave
     }
-    return triwave;
+    return trivec;
 }
 
 
