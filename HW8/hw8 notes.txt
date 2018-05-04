@@ -1,0 +1,7 @@
+HW 8 notes:
+
+Harmony is a wizard we will be using
+
+dont edit main.c, edit app.c 
+
+replicate HW1 and HW7 for HW8 in harmony

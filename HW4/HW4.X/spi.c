@@ -2,10 +2,10 @@
 // Shaan Savarirayan
 // 1.29.2018
 
+#include <xc.h>                 //  processor SFR definitions
+#include <sys/attribs.h>        //  __ISR macro
+
 #include "spi.h"
-
-#define CS LATBbits.LATB15  // chip select pin
-
 
 //  SPI initialization function
 void initSPI1(void) {
@@ -48,7 +48,7 @@ unsigned short MCPdata(unsigned char channel, unsigned char data) {
 }
 
 // sets channel and voltage using MCPdata
-void setVoltage(char channel, char voltage) {           // channel: 0 = A, 1 = B
+void setVoltage(char channel, unsigned char voltage) {  // channel: 0 = A, 1 = B
     CS = 0;                                             // initialize chip select as low to begin communication
     SPI1_io((MCPdata(channel,voltage) & 0xFF00) >> 8);  // sends the first 8 bits of 16 bit mcpdata (spi1_io reads only a byte at a time)
     SPI1_io(MCPdata(channel,voltage) & 0x00FF);         // sends second half of mcpdata

@@ -1,5 +1,5 @@
-# ME 433: advanced mechatronics
-## prof marchuk
-## shaan savarirayan
+# shaansavarirayan_ME433_2017FALL
 
-repo containing all code and project deliverables
+# fall 2017 me433 
+# prof marchuk
+# shaan savarirayan

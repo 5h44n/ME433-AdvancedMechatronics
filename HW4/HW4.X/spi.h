@@ -7,9 +7,7 @@
 
 #ifndef SPI_H
 #define	SPI_H
-
-#define CS LATAbits.LATA0  // chip select pin
-
+#define CS LATBbits.LATB15  // chip select pin
 
 void initSPI1(void);
 unsigned char SPI1_io(unsigned char data);
