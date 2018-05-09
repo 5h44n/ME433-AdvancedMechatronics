@@ -5,8 +5,9 @@
  * Created on May 2, 2018
  */
 
-#ifndef I2C_H
+#ifndef I2C_H 
 #define	I2C_H
+#endif
 
 void initExpander(void);
 void setExpander(char pin, char level);

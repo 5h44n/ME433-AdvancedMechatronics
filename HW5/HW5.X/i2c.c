@@ -2,7 +2,7 @@
 #include<xc.h>
 #include<sys/attribs.h>     // __ISR macro
 
-#define ADD 0x20                // I2C2 7 bit address from data sheet, A2-A0 set to low
+#define ADD 0b0100000                // I2C2 7 bit address from data sheet, A2-A0 set to low
 #define WRITE 0                 // write bit
 #define READ 1                  // read bit
 

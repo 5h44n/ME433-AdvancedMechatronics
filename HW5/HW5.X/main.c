@@ -71,10 +71,10 @@ int main() {
     
     __builtin_enable_interrupts();
   
-    setExpander(0,0)        //  initialize GP0 as low  
+    setExpander(0,0);               //  initialize GP0 as low  
     
-    while(1){
-        r = getExapander();
+    while(1)    {
+        unsigned char r = getExpander();
         if ((r >> 7) & 0x01)    {
             setExpander(0,1);
         }
@@ -82,3 +82,5 @@ int main() {
             setExpander(0,0);
         }
     }
+    return 0;
+}
