@@ -7,7 +7,7 @@ LCD:
 ILI9163C helper files contain functions that:
 	- initialize SPI and associated pins | SPI1_init()
 	- initializes LCD | LCD_init()
-	- write a color to a singel pixel at location x,y where 0,0 is top 	  left of screen | LCD_drawPixel(x,y,color)
+	- write a color to a singel pixel at location x,y where 0,0 is top left of screen | LCD_drawPixel(x,y,color)
 	- make all pixels the same color | LCD_clearScreen(color)
 	- ASCII is 2D array of constants. Each row is an ASCII character! 
 	  (check ASCII table for indexing, follows same order)

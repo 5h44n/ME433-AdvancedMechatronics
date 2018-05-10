@@ -177,5 +177,14 @@ void LCD_drawPixel(unsigned short, unsigned short, unsigned short); // set the x
 void LCD_setAddr(unsigned short, unsigned short, unsigned short, unsigned short); // set the memory address you are writing to
 void LCD_clearScreen(unsigned short); // set the color of every pixel
 
+// custom functions
+void LCD_writeLetter(unsigned short, unsigned short, char, unsigned short);
+void LCD_writeString(unsigned short, unsigned short, char *, unsigned short);
+void LCD_progressBar(unsigned short, unsigned short, unsigned short, unsigned short);
+
+// some easy access definitions
+#define BACKGROUND WHITE        //  define background as white
+#define LED LATAbits.LATA1      //  easy access to LED pin for data or command
+
 #endif	/* ILI9163C_H */
 

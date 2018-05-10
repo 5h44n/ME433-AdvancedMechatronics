@@ -189,3 +189,45 @@ void LCD_clearScreen(unsigned short color) {
 			LCD_data16(color);
 		}
 }
+
+void LCD_writeLetter(unsigned short x, unsigned short y, char letter, unsigned short color)   {
+    int ii,jj;                                                  // ii = column count (5 columns), jj = bit count (8 bits)
+    if((x+5) < 128 && (y+5) <128)  {                           //  check if there's enough screen space
+        for(ii=0;ii<5;ii++)    {
+            for(jj = 0;jj<8;jj++)  {
+                if((ASCII[letter-0x20][ii] >> jj) & 0x01)   {  // if the current pixel is defined on
+                    LCD_drawPixel(x,y,color);
+                }
+                else    {
+                    LCD_drawPixel(x,y,BACKGROUND);
+                }
+                x = x + jj;                                     //  increment to next pixel
+                y = y + jj;     
+            }
+        }
+    }
+    else    {
+        return;
+    }
+}
+
+void LCD_writeString(unsigned short x, unsigned short y, char *string, unsigned short color)    {
+    int ii = 0;
+    char message[100];              //  buffer string to store message
+    sprintf(message,*string);       //  store input in message
+    while(message[ii]) {
+        LCD_writeLetter(x+ii*5,y,message[ii],color);
+        ii++;
+    }
+}
+
+void LCD_progressBar(unsigned short x, unsigned short y, unsigned short len, unsigned short color)  {
+    int ii,jj;
+    if(len>0 && (x+len)<128)   {
+        for(ii=0,ii<len-x,){
+            LCD_drawPixel(x+ii,y,)    
+        }    
+    }
+    
+    
+}
