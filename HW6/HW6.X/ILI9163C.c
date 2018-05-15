@@ -14,6 +14,7 @@
 // B8 is turned into SDI1 but is not used or connected to anything
 
 #include <xc.h>
+#include <stdio.h>
 #include "ILI9163C.h"
 
 void SPI1_init() {
@@ -211,12 +212,10 @@ void LCD_writeLetter(unsigned short x, unsigned short y, char letter, unsigned s
     }
 }
 
-void LCD_writeString(unsigned short x, unsigned short y, char *string, unsigned short color)    {
+void LCD_writeString(unsigned short x, unsigned short y, char *message, unsigned short color)    {
     int ii = 0;
-    char message[100];              //  buffer string to store message
-    sprintf(message,*string);       //  store input in message
     while(message[ii]) {
-        LCD_writeLetter(x+ii*5,y,message[ii],color);
+        LCD_writeLetter(x+(ii*5),y,message[ii],color);
         ii++;
     }
 }
@@ -224,10 +223,15 @@ void LCD_writeString(unsigned short x, unsigned short y, char *string, unsigned 
 void LCD_progressBar(unsigned short x, unsigned short y, unsigned short len, unsigned short color)  {
     int ii,jj;
     if(len>0 && (x+len)<128)   {
-        for(ii=0,ii<len-x,){
-            LCD_drawPixel(x+ii,y,)    
+        for(ii=0; ii<len-x; ii++) {
+            for(jj=0; jj<4; jj++) {
+                if((x+ii)<(x+len))  {
+                    LCD_drawPixel(x+ii,y+jj,color);
+                }
+                else    {
+                    LCD_drawPixel(x+ii,y+jj,BACKGROUND);
+                }
+            }
         }    
     }
-    
-    
 }

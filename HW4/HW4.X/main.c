@@ -41,7 +41,7 @@
 #include "spi.h"                //  spi library w/ appropriate configurations
 #define DELAYTIME 25000         //  delay time of 25000 * 40 ns = 1000000 ns = 1 ms
 #define SINLEN 100              //  length of sin wave values
-#define TRILEN 100              // length of tri wave values
+#define TRILEN 100              // 	length of tri wave values
 
 #define pi 3.14159
 
