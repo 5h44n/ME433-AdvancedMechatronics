@@ -49,16 +49,17 @@ int main() {
         LCD_progressBar(28,50,integer,BLUE);
         
         fps = 24000000/_CP0_GET_COUNT();
-        sprintf(fpsstr,"frames/sec: %1.2f", fps);
+        sprintf(fpsstr,"frames/sec: %1.1f", fps);
         LCD_writeString(28,70,fpsstr,MAGENTA);
         integer++;
         
-        if(integer >= 10)  {
+        if(integer >= 100)  {
             integer = 0;
         }
         
         delay();
     }
+    return 0;
 }
 void delay(void)    {                  //  delay function
     _CP0_SET_COUNT(0);

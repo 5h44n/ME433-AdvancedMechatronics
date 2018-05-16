@@ -193,17 +193,15 @@ void LCD_clearScreen(unsigned short color) {
 
 void LCD_writeLetter(unsigned short x, unsigned short y, char letter, unsigned short color)   {
     int ii,jj;                                                  // ii = column count (5 columns), jj = bit count (8 bits)
-    if((x+5) < 128 && (y+5) <128)  {                           //  check if there's enough screen space
+    if((x+5) < 128 && (y+5) <128)  {                            //  check if there's enough screen space
         for(ii=0;ii<5;ii++)    {
             for(jj = 0;jj<8;jj++)  {
-                if((ASCII[letter-0x20][ii] >> jj) & 0x01)   {  // if the current pixel is defined on
-                    LCD_drawPixel(x,y,color);
+                if((ASCII[letter-0x20][ii] >> jj) & 0x01)   {   // if the current pixel is defined on
+                    LCD_drawPixel(x+ii,y+jj,color);
                 }
                 else    {
-                    LCD_drawPixel(x,y,BACKGROUND);
-                }
-                x = x + jj;                                     //  increment to next pixel
-                y = y + jj;     
+                    LCD_drawPixel(x+ii,y+jj,BACKGROUND);
+                }     
             }
         }
     }
@@ -214,9 +212,11 @@ void LCD_writeLetter(unsigned short x, unsigned short y, char letter, unsigned s
 
 void LCD_writeString(unsigned short x, unsigned short y, char *message, unsigned short color)    {
     int ii = 0;
+    unsigned short xp = x;
     while(message[ii]) {
-        LCD_writeLetter(x+(ii*5),y,message[ii],color);
+        LCD_writeLetter(xp,y,message[ii],color);
         ii++;
+        xp+=5; 
     }
 }
 
