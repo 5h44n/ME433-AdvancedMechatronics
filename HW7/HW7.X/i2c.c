@@ -3,6 +3,13 @@
 // Change I2C1 to the I2C channel you are using
 // I2C pins need pull-up resistors, 2k-10k
 
+#include <xc.h>                     //  processor SFR definitions
+#include <sys/attribs.h>            //  __ISR macro
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "i2c.h"
+
 void i2c_master_setup(void) {
   I2C2BRG = 233;                    // I2CBRG = [1/(2*Fsck) - PGD]*Pblck - 2 
                                     // look up PGD for your PIC32
@@ -44,5 +51,23 @@ void i2c_master_ack(int val) {        // sends ACK = 0 (slave should send anothe
 void i2c_master_stop(void) {          // send a STOP:
   I2C2CONbits.PEN = 1;                // comm is complete and master relinquishes bus
   while(I2C2CONbits.PEN) { ; }        // wait for STOP to complete
+}
+
+void i2c_read_multiple(unsigned char address, unsigned char regis, unsigned char *data, int length)    {
+    i2c_master_start();
+    i2c_master_send(address << 1 | WRITE);      //  write mode
+    i2c_master_restart(); 
+    i2c_master_send((address << 1) | READ);     //  read mode
+    int i;
+    for(i = 0; i < length-1; i++){              //  iterates through data array storing received values  
+        data[i] = i2c_master_recv();            
+        if(i ==(length-1))  {
+            i2c_master_ack(1);                  //  send NACK to signal that read is terminated
+        }
+        else    {
+            i2c_master_ack(0);
+        }                          
+    }
+    i2c_master_stop();
 }
 

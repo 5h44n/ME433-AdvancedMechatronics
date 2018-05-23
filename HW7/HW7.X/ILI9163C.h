@@ -158,8 +158,8 @@ static const char ASCII[96][5] = {
 
 #define	BLACK     0x0000
 #define WHITE     0xFFFF
-#define	BLUE      0x001F
-#define	RED       0xF800
+#define	RED       0x001F
+#define	BLUE      0xF800
 #define	GREEN     0x07E0
 #define CYAN      0x07FF
 #define MAGENTA   0xF81F
@@ -184,7 +184,6 @@ void LCD_progressBar(unsigned short, unsigned short, unsigned short, unsigned sh
 
 // some easy access definitions
 #define BACKGROUND WHITE        //  define background as white
-#define LED LATAbits.LATA1      //  easy access to LED pin for data or command
 
 #endif	/* ILI9163C_H */
 

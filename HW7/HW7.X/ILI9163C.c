@@ -13,8 +13,10 @@
 
 // B8 is turned into SDI1 but is not used or connected to anything
 
-#include <xc.h>
+#include <xc.h>                     //  processor SFR definitions
+#include <sys/attribs.h>            //  __ISR macro
 #include <stdio.h>
+#include <stdlib.h>
 #include "ILI9163C.h"
 
 void SPI1_init() {

@@ -7,6 +7,7 @@
       <itemPath>ILI9163C.h</itemPath>
       <itemPath>config.h</itemPath>
       <itemPath>i2c.h</itemPath>
+      <itemPath>LSM6DS333.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -18,6 +19,7 @@
       <itemPath>ILI9163C.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>i2c.c</itemPath>
+      <itemPath>LSM6DS333.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
