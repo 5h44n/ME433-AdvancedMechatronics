@@ -17,6 +17,7 @@
 #include <sys/attribs.h>            //  __ISR macro
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include "ILI9163C.h"
 
 void SPI1_init() {
@@ -223,18 +224,119 @@ void LCD_writeString(unsigned short x, unsigned short y, char *message, unsigned
 }
 
 void LCD_progressBar(unsigned short x, unsigned short y, unsigned short len, unsigned short color)  {
-    int ii,jj;
+    int i,j;
     if(len>0 && (x+len)<128)   {
-        for(ii=0; ii<len-x; ii++) {
-            for(jj=0; jj<4; jj++) {
-                if((x+ii)<(x+len))  {
-                    LCD_drawPixel(x+ii,y+jj,color);
-                }
-                else    {
-                    LCD_drawPixel(x+ii,y+jj,BACKGROUND);
-                }
+        for(i=0; i<len-x; i++) {
+            for(j=0; j<4; j++) {
+                LCD_drawPixel(x+i,y+j,color);
             }
         }    
     }
 }
 
+void LCD_positiveX(char len, unsigned short color, unsigned short x)    {
+    int i,j;
+    unsigned short cl = CROSSLENGTH;
+    
+    for(i=0; i<cl; i++)  {
+        for(j=0; j<4; j++)  {
+            if(i<len)   {
+                LCD_drawPixel(x-i,YCEN+j,color);
+            }
+            else{
+                LCD_drawPixel(x-i,YCEN+j,BACKGROUND);
+            }
+        }
+    }
+    
+    if (len>0)  {
+    LCD_negativeX(0,BACKGROUND,63); 
+    }
+}
+
+void LCD_negativeX(char len, unsigned short color, unsigned short x)    {
+    int i,j;
+    unsigned short cl = CROSSLENGTH;
+    
+    for(i=0; i<cl; i++)    {
+        for(j=0; j<4; j++)  {
+            if(i<len)   {
+                LCD_drawPixel(x+i,YCEN+j,color);
+            }
+            else    {
+                LCD_drawPixel(x+i,YCEN+j,BACKGROUND);
+            }
+        } 
+    }
+    
+    if (len>0)  {
+        LCD_positiveX(0,BACKGROUND,65);
+    }
+}
+
+void LCD_positiveY(char len, unsigned short color, unsigned short y)    {
+    int i,j;
+    unsigned short cl = CROSSLENGTH;
+    
+    for(j=0; j<cl; j++) {
+        for(i=0; i<4; i++)  {
+            if (j<len)  {
+                LCD_drawPixel(XCEN+i,y-j,color);
+            }
+            else    {
+                LCD_drawPixel(XCEN+i,y-j,BACKGROUND);
+            }
+        }
+    }
+    
+    if (len>0)  {
+    LCD_negativeY(0,BACKGROUND,81);
+    }
+    
+}
+
+void LCD_negativeY(char len, unsigned short color, unsigned short y)    {
+    int i,j;
+    unsigned short cl= CROSSLENGTH;
+    
+    for(j=0; j<cl; j++) {
+        for(i=0; i<4; i++)  {
+            if (j<len)  {
+                LCD_drawPixel(XCEN+i,y+j,color);
+            }
+            else    {
+                LCD_drawPixel(XCEN+i,y+j,BACKGROUND);
+            }
+        }
+    }
+    
+    if (len>0)  {
+    LCD_positiveY(0,BACKGROUND,79);
+    }
+}
+
+void LCD_drawCross(float xacc, float yacc, unsigned short color)    {
+    
+    // note: center of LCD is x = 64, y = 80
+    
+    char xlen = abs(xacc * 50.0);
+    char ylen = abs(yacc * 50.0);
+    if (xlen < 50)  {
+        if (xacc > 0) {
+            LCD_positiveX(xlen,color,64);
+        }
+        else    {
+            LCD_negativeX(xlen,color,64);
+        }
+    }
+    
+    if (ylen <50)   {
+
+        if(yacc > 0)  {
+            LCD_positiveY(ylen,color,80);
+        }
+        else    {
+            LCD_negativeY(ylen,color,80);
+        }
+    }
+}

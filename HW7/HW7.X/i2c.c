@@ -56,18 +56,20 @@ void i2c_master_stop(void) {          // send a STOP:
 void i2c_read_multiple(unsigned char address, unsigned char regis, unsigned char *data, int length)    {
     i2c_master_start();
     i2c_master_send(address << 1 | WRITE);      //  write mode
+    i2c_master_send(regis);                     //  select register to read from
     i2c_master_restart(); 
     i2c_master_send((address << 1) | READ);     //  read mode
+    
     int i;
-    for(i = 0; i < length-1; i++){              //  iterates through data array storing received values  
+    for(i = 0; i < length; i++){                //  iterates through data array storing received values  
         data[i] = i2c_master_recv();            
-        if(i ==(length-1))  {
+        if (i == length-1)  {
             i2c_master_ack(1);                  //  send NACK to signal that read is terminated
         }
         else    {
-            i2c_master_ack(0);
-        }                          
-    }
+            i2c_master_ack(0);                  //  keep reading
+        }
+    }                         
     i2c_master_stop();
 }
 

@@ -153,7 +153,7 @@ static const char ASCII[96][5] = {
 #define CMD_GAMRSEL		0xF2//GAM_R_SEL
 
 #define _GRAMWIDTH 128
-#define _GRAMHEIGH 128 //160
+#define _GRAMHEIGH 160
 #define _GRAMSIZE  _GRAMWIDTH * _GRAMHEIGH
 
 #define	BLACK     0x0000
@@ -161,9 +161,9 @@ static const char ASCII[96][5] = {
 #define	RED       0x001F
 #define	BLUE      0xF800
 #define	GREEN     0x07E0
-#define CYAN      0x07FF
+#define YELLOW    0x07FF
 #define MAGENTA   0xF81F
-#define YELLOW    0xFFE0
+#define CYAN      0xFFE0
 
 static unsigned char pGammaSet[15]= {0x36,0x29,0x12,0x22,0x1C,0x15,0x42,0xB7,0x2F,0x13,0x12,0x0A,0x11,0x0B,0x06};
 static unsigned char nGammaSet[15]= {0x09,0x16,0x2D,0x0D,0x13,0x15,0x40,0x48,0x53,0x0C,0x1D,0x25,0x2E,0x34,0x39};
@@ -182,8 +182,17 @@ void LCD_writeLetter(unsigned short, unsigned short, char, unsigned short);
 void LCD_writeString(unsigned short, unsigned short, char *, unsigned short);
 void LCD_progressBar(unsigned short, unsigned short, unsigned short, unsigned short);
 
+void LCD_positiveX(char, unsigned short, unsigned short);
+void LCD_negativeX(char, unsigned short, unsigned short);
+void LCD_positiveY(char, unsigned short, unsigned short);
+void LCD_negativeY(char, unsigned short, unsigned short);
+
+void LCD_drawCross(float,float,unsigned short);
+
 // some easy access definitions
-#define BACKGROUND WHITE        //  define background as white
+#define BACKGROUND CYAN        //  define background color
+#define CROSSLENGTH 50
+#define XCEN 64
+#define YCEN 80
 
 #endif	/* ILI9163C_H */
-
