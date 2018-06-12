@@ -451,7 +451,7 @@ void APP_Tasks(void) {
                     i,readAccX(dataraw),readAccY(dataraw),readAccZ(dataraw),
                     readGyroX(dataraw),readGyroY(dataraw),readGyroZ(dataraw));
                 i++;
-                if (i > 100) {  
+                if (i > 99) {  
                     i = 0;                                  //  reset after 100 values
                     flag = 0;
                     appData.readBuffer[0] = 'x';
