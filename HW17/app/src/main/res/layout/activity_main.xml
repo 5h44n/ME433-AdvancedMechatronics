@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextureView
+                android:id="@+id/textureview"
+                android:layout_width="640px"
+                android:layout_height="480px" />
+
+            <SurfaceView
+                android:id="@+id/surfaceview"
+                android:layout_width="640px"
+                android:layout_height="480px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RainbowRoad"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            // FPS
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nothing yet"
+                android:id="@+id/cameraStatus"/>
+
+            // Red threshold control
+            <TextView
+                android:id="@+id/threshRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set Red threshold" />
+
+            <SeekBar
+                android:id="@+id/seekRed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:progress="0"
+                android:secondaryProgress="0"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+            // Blue threshold control
+            <TextView
+                android:id="@+id/threshBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set Blue threshold" />
+
+            <SeekBar
+                android:id="@+id/seekBlue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:progress="0"
+                android:secondaryProgress="0"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+            //  Green threshold control
+            <TextView
+                android:id="@+id/threshGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set Green threshold" />
+
+            <SeekBar
+                android:id="@+id/seekGreen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:progress="0"
+                android:secondaryProgress="0"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
