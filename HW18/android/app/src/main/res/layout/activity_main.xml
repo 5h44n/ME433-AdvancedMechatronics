@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            //  Images
+            <TextureView
+                android:id="@+id/textureview"
+                android:layout_width="640px"
+                android:layout_height="480px" />
+
+            <SurfaceView
+                android:id="@+id/surfaceview"
+                android:layout_width="640px"
+                android:layout_height="480px" />
+
+            //  App name
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ColorCar: ME 433 2018"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            // FPS
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nothing yet"
+                android:id="@+id/cameraStatus"/>
+
+            // COM
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COM: "
+                android:id="@+id/COM"/>
+
+            // Red threshold control
+            <TextView
+                android:id="@+id/threshRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set Red threshold" />
+
+            <SeekBar
+                android:id="@+id/seekRed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:progress="0"
+                android:secondaryProgress="0"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            // Brightness threshold control
+            <TextView
+                android:id="@+id/threshBrightness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set Brightness threshold" />
+
+            <SeekBar
+                android:id="@+id/seekBrightness"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:progress="0"
+                android:secondaryProgress="0"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <SeekBar
+                android:id="@+id/seek1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:progress="0"
+                android:secondaryProgress="0"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="send COM" />
+
+            <TextView
+                android:id="@+id/textView02"
+                android:text="nothing from button yet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ScrollView
+                android:id="@+id/ScrollView01"
+                android:layout_width="wrap_content"
+                android:layout_height="250dip">
+
+                <TextView
+                    android:id="@+id/textView03"
+                    android:text="nothing from usb yet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_light"
+                    />
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

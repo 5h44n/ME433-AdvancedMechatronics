@@ -37,11 +37,10 @@ public class MainActivity extends Activity implements TextureView.SurfaceTexture
     private TextView mTextView;
 
     SeekBar redControl;
-    SeekBar blueControl;
-    SeekBar greenControl;
+    SeekBar brightnessControl;
     TextView redTextView;
-    TextView blueTextView;
-    TextView greenTextView;
+    TextView brightnessTextView;
+    TextView COMTextView;
     static long prevtime = 0;               // for FPS calculation
 
 
@@ -52,16 +51,14 @@ public class MainActivity extends Activity implements TextureView.SurfaceTexture
 
         mTextView = (TextView) findViewById(R.id.cameraStatus);
         redControl = (SeekBar) findViewById(R.id.seekRed);
-        blueControl = (SeekBar) findViewById(R.id.seekBlue);
-        greenControl = (SeekBar) findViewById(R.id.seekGreen);
+        brightnessControl = (SeekBar) findViewById(R.id.seekBrightness);
 
         redTextView = (TextView) findViewById(R.id.threshRed);
-        blueTextView = (TextView) findViewById(R.id.threshBlue);
-        greenTextView = (TextView) findViewById(R.id.threshGreen);
+        brightnessTextView = (TextView) findViewById(R.id.threshBrightness);
+        COMTextView = (TextView) findViewById(R. id. COM);
 
         setRedControlListener();
-        setBlueControlListener();
-        setGreenControlListener();
+        setBrightnessControlListener();
 
         // see if the app has permission to use the camera
         ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CAMERA}, 1);
@@ -118,8 +115,7 @@ public class MainActivity extends Activity implements TextureView.SurfaceTexture
         final Canvas c = mSurfaceHolder.lockCanvas();
         if (c != null) {
             int limitRed = getRedThresh();
-            int limitBlue = getBlueThresh();
-            int limitGreen = getGreenThresh();
+            int limitBrightness = getBrightnessThresh();
             int COM = 0;
             int[] pixels = new int[bmp.getWidth()]; // pixels[] is the RGBA data
 
@@ -128,7 +124,7 @@ public class MainActivity extends Activity implements TextureView.SurfaceTexture
             int sum_mr = 0; // the sum of the mass times the radius
             int sum_m = 0; // the sum of the masses
             for (int i = 0; i < bmp.getWidth(); i++) {
-                if ( ((red(pixels[i]) - (green(pixels[i]) + blue(pixels[i]))/2) > -limitRed) && ((red(pixels[i]) - (green(pixels[i])+blue(pixels[i]))/2) < limitRed) && (red(pixels[i])  > limitGreen) ) {
+                if ( ((red(pixels[i]) - (green(pixels[i]) + blue(pixels[i]))/2) > -limitRed) && ((red(pixels[i]) - (green(pixels[i])+blue(pixels[i]))/2) < limitRed) && (red(pixels[i])  > limitBrightness) ) {
                     pixels[i] = rgb(1, 1, 1); // set the pixel to almost 100% black
 
                     sum_m = sum_m + green(pixels[i])+red(pixels[i])+blue(pixels[i]);
@@ -142,6 +138,8 @@ public class MainActivity extends Activity implements TextureView.SurfaceTexture
             else{
                 COM = 0;
             }
+            // write COM as text
+            COMTextView.setText("COM: " + COM);
 
         }
 
@@ -165,13 +163,8 @@ public class MainActivity extends Activity implements TextureView.SurfaceTexture
         int value = seekBar.getProgress();
         return value;
     }
-    public int getBlueThresh() {
-        SeekBar seekBar = findViewById(R.id.seekBlue);
-        int value = seekBar.getProgress();
-        return value;
-    }
-    public int getGreenThresh() {
-        SeekBar seekBar = findViewById(R.id.seekGreen);
+    public int getBrightnessThresh() {
+        SeekBar seekBar = findViewById(R.id.seekBrightness);
         int value = seekBar.getProgress();
         return value;
     }
@@ -198,38 +191,15 @@ public class MainActivity extends Activity implements TextureView.SurfaceTexture
             }
         });
     }
-    private void setBlueControlListener() {
-        blueControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+    private void setBrightnessControlListener() {
+        brightnessControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             int progressChanged = 0;
 
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 progressChanged = progress;
-                blueTextView.setText("Blue threshold is: "+ progress);
-
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-    }
-    private void setGreenControlListener() {
-        greenControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-
-            int progressChanged = 0;
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                progressChanged = progress;
-                greenTextView.setText("Green threshold is: "+ progress);
-
+                brightnessTextView.setText("Brightness threshold is: "+ progress);
             }
 
             @Override

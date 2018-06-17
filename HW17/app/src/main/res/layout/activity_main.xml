@@ -26,6 +26,7 @@
                 android:layout_width="640px"
                 android:layout_height="480px" />
 
+            // App name
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,6 +43,13 @@
                 android:layout_height="wrap_content"
                 android:text="Nothing yet"
                 android:id="@+id/cameraStatus"/>
+
+            // COM
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COM: "
+                android:id="@+id/COM"/>
 
             // Red threshold control
             <TextView
@@ -61,33 +69,15 @@
                 android:paddingBottom="10dp"
                 />
 
-            // Blue threshold control
+            // Brightness threshold control
             <TextView
-                android:id="@+id/threshBlue"
+                android:id="@+id/threshBrightness"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="set Blue threshold" />
+                android:text="set Brightness threshold" />
 
             <SeekBar
-                android:id="@+id/seekBlue"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:progress="0"
-                android:secondaryProgress="0"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                />
-
-            //  Green threshold control
-            <TextView
-                android:id="@+id/threshGreen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="set Green threshold" />
-
-            <SeekBar
-                android:id="@+id/seekGreen"
+                android:id="@+id/seekBrightness"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

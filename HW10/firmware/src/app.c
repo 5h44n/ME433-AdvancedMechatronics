@@ -459,16 +459,16 @@ void APP_Tasks(void) {
             
             i2c_read_multiple(ADD,0x20,dataraw,14);                     //  read data and store in dataraw
             //zRaw = readAccZ(dataraw);                                 //  process z acceleration
-            buffer[count%SCALAR_MAF] = readAccZ(dataraw);               //  update data buffer
+            buffer[count%SCALAR_MAF] = readAccX(dataraw);               //  update data buffer
             test = readAccZ(dataraw);
             
             sprintf(message,"z_acc = %3.3f   ",readAccZ(dataraw));
-            LCD_writeString(20,40,message,BLACK);
+            LCD_writeString(20,40,message,RED);
             sprintf(message,"test = %3.3f ", test);
-            LCD_writeString(20,60,message,BLACK);
+            LCD_writeString(20,60,message,RED);         
 
             /* MAF FILTER */
-            MAF = readAccZ(dataraw);                                  //  wait until there have been enough values
+            MAF = readAccZ(dataraw);                            //  wait until there have been enough values
             if (count >= (SCALAR_MAF)) {
                  for (i = 1; i < SCALAR_MAF; i++)  {
                      MAF += buffer[(count - i) % SCALAR_MAF];

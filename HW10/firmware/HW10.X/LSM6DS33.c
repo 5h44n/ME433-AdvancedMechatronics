@@ -68,7 +68,7 @@ float readAccY(unsigned char * data) {          // convert, scale y-acceleration
 
 float readAccZ(unsigned char * data) {          // convert, scale z-acceleration 
     signed short z = data[13]<<8 | data[12];
-    return z*(2.0/32767.0);
+    return (float) z*(2.0/32767.0);
 }
 
 

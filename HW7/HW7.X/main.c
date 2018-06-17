@@ -71,18 +71,20 @@ int main()    {
         xlen = abs(xacc*50.0);
         ylen = abs(yacc*50.0);
         
+        
+        
         sprintf(message,"x''= %1.1f",xacc);         //  datap = [temp gx gy gz ax ay az]
         LCD_writeString(5,10,message,BLACK);
         sprintf(message,"y'' = %1.1f",yacc);
         LCD_writeString(5,20,message,RED);
-        /*    
-        sprintf(message,"xbar= %d  ",xlen);         
+        /*
+        sprintf(message,"xtest= %d  ",datap[4]);         
         LCD_writeString(5,40,message,BLACK);
-        sprintf(message,"ybar = %d  ",ylen);
+        sprintf(message,"ytest = %d  ",datap[5]);
         LCD_writeString(5,50,message,RED);
         */
         
-        LCD_drawCross(xacc,yacc,MAGENTA);
+        //                                   LCD_drawCross(xacc,yacc,MAGENTA);
         
         LED = !LED;                                 //  just an indicator 
         delay();
