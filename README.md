@@ -30,7 +30,7 @@ create custom PCB of PIC32 circuit using SparkFun Eagle GitHub libraries
 
 5cm x 5cm
 
-error checking and Gerber files generated
+checked for errors and Gerber files generated
 
 ![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png "fly liek n eagle")
 ![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png "gerber life insurence")
