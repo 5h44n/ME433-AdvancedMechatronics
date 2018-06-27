@@ -1,5 +1,6 @@
 # ME 433: shaan savarirayan
 
+### general
 repo for ME 433 Advanced Mechatronics assignments and projects
 
 *instructor*: Prof. Nick Marchuk
