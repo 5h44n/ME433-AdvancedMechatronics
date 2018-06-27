@@ -33,7 +33,7 @@ create custom PCB of PIC32 circuit using SparkFun Eagle GitHub libraries
 error checking and Gerber files generated
 
 ![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png "fly liek n eagle")
-![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20gerber.png "gerber life insurence")
+![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png "gerber life insurence")
 
 # HW4 - SPI DAC
 
