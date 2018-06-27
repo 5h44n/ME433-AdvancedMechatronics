@@ -6,9 +6,7 @@ repo for ME 433 Advanced Mechatronics assignments and projects
 
 *course source*: https://github.com/ndm736/ME433_2017/wiki
 
-# general information
-
-Northwestern University
+### equipment
 
 PIC32MX250F128B microcontroller
 
