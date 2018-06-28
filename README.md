@@ -55,12 +55,11 @@ HW6 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW6)
 
 use SPI to communicate with this [128 x 160 pixel TFT LCD](https://www.aliexpress.com/item/Free-Shipping-1-8-inch-TFT-touch-LCD-Module-LCD-Screen-Module-SPI-serial-51-drivers/32263827143.html)
 
-video demo 
-![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW6/LCD_Hello%20World!.mp4)
+video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW6/LCD_Hello%20World!.mp4) (mp4 download required)
 
 # HW7 - LCD control with IMU
 
-
+HW7 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW7). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW7)
 
 # FINAL PROJECT
 
