@@ -56,7 +56,7 @@ HW5 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW5)
 
 connect PIC32 to [MCP23008 I/O expander](http://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf) and run a test demo
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW5/I2C%20schematic.png" height = "70%" width = "70%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW5/I2C%20schematic.png" height = "70%" width = "70%"><a/>
 
 ## HW6 - LCD printing
 
