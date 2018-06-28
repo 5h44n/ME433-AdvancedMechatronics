@@ -18,6 +18,8 @@ PIC32MX250F128B microcontroller
 
 HW1 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW1). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW1)
 
+<img src="https://github.com/favicon.ico" height="24">
+
 build PIC32 breadboard circuit and test demo of blinking LED light (1kHz) and stops blinking in reponse to button push
 
 breadboard circuit:
