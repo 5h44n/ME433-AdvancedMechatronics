@@ -22,7 +22,7 @@ breadboard circuit:
 
 ![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW1/pic32%20circuit.jpg "mm bread")
 
-# HW2 & HW3 - PCB CAD
+## HW2 & HW3 - PCB CAD
 
 HW2 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW2). HW3 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW3). my assignment folders [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW2) and [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW3)
 
