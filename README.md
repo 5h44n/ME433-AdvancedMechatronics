@@ -61,7 +61,15 @@ video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/
 
 HW7 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW7). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW7)
 
+control a flowing bars in x and y directions on LCD screen by rotating [LSM6DS33 Polulu breakout board](https://www.pololu.com/product/2736), with I2C connection
+
+video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW7/IMU_accelerometer.mp4) (mp4 download required)
+
+# HW8 - MPLAB Harmony 
+
 # FINAL PROJECT
+
+
 
 
 
