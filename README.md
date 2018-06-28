@@ -110,6 +110,10 @@ HW14 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW1
 
 design and build a laser cut/3d printed robot car that can follow rainbow road on the map below using a PIC32 for motor control and an Android phone camera for image processing
 
+Android code [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW18/android)
+
+PIC code [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW18/firmware)
+
 ### map:
 
 <a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW18/techCup2018.png" height = "50%" width = "50%">
