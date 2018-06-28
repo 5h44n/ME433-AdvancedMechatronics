@@ -24,7 +24,7 @@ build PIC32 breadboard circuit and test demo of blinking LED light (1kHz) and st
 
 breadboard circuit:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW1/pic32%20circuit.jpg> height = "40%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW1/pic32%20circuit.jpg" height = "40%">
 
 ## HW2 & HW3 - PCB CAD
 
