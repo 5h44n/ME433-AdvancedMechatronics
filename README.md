@@ -34,7 +34,7 @@ create custom PCB of PIC32 circuit using SparkFun Eagle GitHub libraries
 
 checked for errors and Gerber files generated
 
-![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png "fly liek n eagle")
+![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png "fly liek n eagle" = 250 x 250)
 ![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png "gerber life insurence")
 
 ## HW4 - SPI DAC
@@ -113,7 +113,7 @@ design and build a laser cut/3d printed robot car that can follow rainbow road o
 
 ### wheels (OnShape)
 
-![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/wheel.jpg)
+![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/wheel.JPG)
 
 ### final car
 
