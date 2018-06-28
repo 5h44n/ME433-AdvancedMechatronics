@@ -40,7 +40,7 @@ checked for errors and Gerber files generated
   
 *board*:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png"><a/>
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png"></a>
 
 ## HW4 - SPI DAC
 
@@ -48,7 +48,7 @@ HW4 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW4)
 
 connect PIC32 to DAC (the [MCP4902](http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf)) and run a test demo
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW4/SPI%20schematic.png" height = "70%" width = "70%"><a/>
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW4/SPI%20schematic.png" height = "70%" width = "70%"></a>
 
 ## HW5 - I2C pin expander
 
@@ -56,7 +56,7 @@ HW5 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW5)
 
 connect PIC32 to [MCP23008 I/O expander](http://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf) and run a test demo
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW5/I2C%20schematic.png" height = "70%" width = "70%"><a/>
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW5/I2C%20schematic.png" height = "70%" width = "70%"></a>
 
 ## HW6 - LCD printing
 
@@ -88,6 +88,8 @@ HW9 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW8)
 
 HW10 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW10). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW10)
 
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW10/filters%20graph.jpg" height="50%" width = "50%"></a>
+
 ## HW11 - HID USB Mouse
 
 HW11 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW11). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW11)
@@ -96,9 +98,17 @@ HW11 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW1
 
 HW12 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW12). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW12)
 
+Write a "Hello World!" Android app that also returns a slider value
+
+video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW12/Android%20HelloWorld.mp4) (mp4 download required)
+
 ## HW13 - Color Recognition Android App
 
 HW13 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW13). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW13)
+
+Write an Android app that recognizes green objects via camera and then highlights them in bright green
+
+video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW13/ColorCamera%20-%20Green.mp4) (mp4 download required)
 
 ## HW14 - USB communication between Android and PIC
 
@@ -116,17 +126,17 @@ PIC code [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/ma
 
 ### map:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW18/techCup2018.png" height = "50%" width = "50%"><a/>
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW18/techCup2018.png" height = "50%" width = "50%"></a>
 
 ### car body (SolidWorks)
 
 base + sides:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20base.jpg" height = "50%" width = "50%"><a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20side.jpg" height = "50%" width = "50%"><a/>
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20base.jpg" height = "50%" width = "50%"><a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20side.jpg" height = "50%" width = "50%"></a>
 
 ### wheels (OnShape)
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/wheel.JPG" height = "50%" width = "50%"><a/>
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/wheel.JPG" height = "50%" width = "50%"></a>
 
 ### final car
 
