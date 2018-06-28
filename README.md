@@ -117,6 +117,8 @@ design and build a laser cut/3d printed robot car that can follow rainbow road o
 ### car body (SolidWorks)
 
 <a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20base.jpg" height = "50%" width = "50%">
+  
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20side.jpg" height = "50%" width = "50%">
 
 ### wheels (OnShape)
 
