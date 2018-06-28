@@ -22,7 +22,7 @@ build PIC32 breadboard circuit and test demo of blinking LED light (1kHz) and st
 
 breadboard circuit:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW1/pic32%20circuit.jpg" height = "40%" width = "40%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW1/pic32%20circuit.jpg" height = "50%" width = "50%">
 
 ## HW2 & HW3 - PCB CAD
 
@@ -112,15 +112,15 @@ design and build a laser cut/3d printed robot car that can follow rainbow road o
 
 ### map:
 
-![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW18/techCup2018.png)
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW18/techCup2018.png" height = "50%" width = "50%">
 
 ### car body (SolidWorks)
 
-![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20base.jpg)
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20base.jpg" height = "50%" width = "50%">
 
 ### wheels (OnShape)
 
-![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/wheel.JPG)
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/wheel.JPG" height = "50%" width = "50%">
 
 ### final car
 
