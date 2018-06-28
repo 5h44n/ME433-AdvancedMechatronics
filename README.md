@@ -49,7 +49,7 @@ HW5 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW5)
 
 connect PIC32 to [MCP23008 I/O expander](http://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf) and run a test demo 
 
-# HW6 - LCD printing
+## HW6 - LCD printing
 
 HW6 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW6). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW6)
 
@@ -57,7 +57,7 @@ use SPI to communicate with this [128 x 160 pixel TFT LCD](https://www.aliexpres
 
 video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW6/LCD_Hello%20World!.mp4) (mp4 download required)
 
-# HW7 - LCD control with IMU
+## HW7 - LCD control with IMU
 
 HW7 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW7). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW7)
 
@@ -65,9 +65,9 @@ control a flowing bars in x and y directions on LCD screen by rotating [LSM6DS33
 
 video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW7/IMU_accelerometer.mp4) (mp4 download required)
 
-# HW8 - MPLAB Harmony 
+## HW8 - MPLAB Harmony 
 
-# FINAL PROJECT
+## Final Project
 
 
 
