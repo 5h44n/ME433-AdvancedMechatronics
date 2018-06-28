@@ -6,6 +6,8 @@ repo for ME 433 Advanced Mechatronics assignments and projects
 
 *instructor*: Prof. Nick Marchuk
 
+*institution*: Northwestern University, Evanston, IL, USA
+
 *course source*: https://github.com/ndm736/ME433_2018/wiki
 
 ### equipment
