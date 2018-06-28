@@ -22,7 +22,7 @@ build PIC32 breadboard circuit and test demo of blinking LED light (1kHz) and st
 
 breadboard circuit:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW1/pic32%20circuit.jpg" height = "50%" width = "50%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW1/pic32%20circuit.jpg" height = "50%" width = "50%"><a/>
 
 ## HW2 & HW3 - PCB CAD
 
@@ -36,11 +36,11 @@ checked for errors and Gerber files generated
 
 schematic:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png" height = "50%" width = "50%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png" height = "50%" width = "50%"><a/>
   
 board:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png"><a/>
 
 ## HW4 - SPI DAC
 
@@ -48,7 +48,7 @@ HW4 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW4)
 
 connect PIC32 to DAC (the [MCP4902](http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf)) and run a test demo
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW4/SPI%20schematic.png" height = "70%" width = "70%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW4/SPI%20schematic.png" height = "70%" width = "70%"><a/>
 
 ## HW5 - I2C pin expander
 
@@ -116,17 +116,17 @@ PIC code [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/ma
 
 ### map:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW18/techCup2018.png" height = "50%" width = "50%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW18/techCup2018.png" height = "50%" width = "50%"><a/>
 
 ### car body (SolidWorks)
 
 base + sides:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20base.jpg" height = "50%" width = "50%"><a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20side.jpg" height = "50%" width = "50%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20base.jpg" height = "50%" width = "50%"><a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20side.jpg" height = "50%" width = "50%"><a/>
 
 ### wheels (OnShape)
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/wheel.JPG" height = "50%" width = "50%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/wheel.JPG" height = "50%" width = "50%"><a/>
 
 ### final car
 
