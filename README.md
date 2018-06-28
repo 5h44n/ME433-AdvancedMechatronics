@@ -34,11 +34,11 @@ create custom PCB of PIC32 circuit using SparkFun Eagle GitHub libraries
 
 checked for errors and Gerber files generated
 
-*schematic*:
+schematic:
 
 <a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png" height = "50%" width = "50%">
   
-*board*:
+board:
 
 <a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png">
 
@@ -119,6 +119,8 @@ PIC code [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/ma
 <a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW18/techCup2018.png" height = "50%" width = "50%">
 
 ### car body (SolidWorks)
+
+base + sides:
 
 <a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20base.jpg" height = "50%" width = "50%"><a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW15/car%20side.jpg" height = "50%" width = "50%">
 
