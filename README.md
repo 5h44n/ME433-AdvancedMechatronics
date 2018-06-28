@@ -14,7 +14,7 @@ PIC32MX250F128B microcontroller
 
 # HW1
 
-HW1 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW1). My assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW1)
+HW1 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW1). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW1)
 
 build PIC32 breadboard circuit and test demo of blinking LED light (1kHz) and stops blinking in reponse to button push
 
@@ -24,7 +24,7 @@ breadboard circuit:
 
 # HW2 & HW3 - PCB CAD
 
-HW2 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW2). HW3 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW3). My homework folders [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW2) and [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW3)
+HW2 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW2). HW3 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW3). my assignment folders [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW2) and [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW3)
 
 create custom PCB of PIC32 circuit using SparkFun Eagle GitHub libraries
 
@@ -37,15 +37,29 @@ checked for errors and Gerber files generated
 
 # HW4 - SPI DAC
 
-HW4 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW4). My assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW4)
+HW4 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW4). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW4)
 
+connect PIC32 to DAC (the [MCP4902](http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf)) and run a test demo
 
+![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW4/SPI%20schematic.png "i spi with my lil i")
 
 # HW5 - I2C pin expander
 
+HW5 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW5). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW5)
+
+connect PIC32 to [MCP23008 I/O expander](http://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf) and run a test demo 
+
 # HW6 - LCD printing
 
+HW6 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW6). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW6)
+
+use SPI to communicate with this [128 x 160 pixel TFT LCD](https://www.aliexpress.com/item/Free-Shipping-1-8-inch-TFT-touch-LCD-Module-LCD-Screen-Module-SPI-serial-51-drivers/32263827143.html)
+
+video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW6/LCD_Hello%20World!.mp4)
+
 # HW7 - LCD control with IMU
+
+
 
 # FINAL PROJECT
 
