@@ -88,6 +88,8 @@ HW9 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW8)
 
 HW10 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW10). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW10)
 
+implement three different low pass filters on the data given by the IMU from HW7
+
 <a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW10/filters%20graph.jpg" height="50%" width = "50%"></a>
 
 ## HW11 - HID USB Mouse
