@@ -18,8 +18,6 @@ PIC32MX250F128B microcontroller
 
 HW1 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW1). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW1)
 
-<img src="https://github.com/favicon.ico" height="24">
-
 build PIC32 breadboard circuit and test demo of blinking LED light (1kHz) and stops blinking in reponse to button push
 
 breadboard circuit:
@@ -36,8 +34,8 @@ create custom PCB of PIC32 circuit using SparkFun Eagle GitHub libraries
 
 checked for errors and Gerber files generated
 
-![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png)
-![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png "gerber life insurence")
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png" height = "40%" width = "40%">
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png">
 
 ## HW4 - SPI DAC
 
