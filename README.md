@@ -12,7 +12,7 @@ repo for ME 433 Advanced Mechatronics assignments and projects
 
 PIC32MX250F128B microcontroller
 
-# HW1
+## HW1
 
 HW1 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW1). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW1)
 
@@ -35,7 +35,7 @@ checked for errors and Gerber files generated
 ![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20schematic.png "fly liek n eagle")
 ![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/pic32%20board.png "gerber life insurence")
 
-# HW4 - SPI DAC
+## HW4 - SPI DAC
 
 HW4 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW4). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW4)
 
@@ -43,7 +43,7 @@ connect PIC32 to DAC (the [MCP4902](http://ww1.microchip.com/downloads/en/Device
 
 ![alt text](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW4/SPI%20schematic.png "i spi with my lil i")
 
-# HW5 - I2C pin expander
+## HW5 - I2C pin expander
 
 HW5 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW5). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW5)
 
