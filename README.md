@@ -65,9 +65,52 @@ control a flowing bars in x and y directions on LCD screen by rotating [LSM6DS33
 
 video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW7/IMU_accelerometer.mp4) (mp4 download required)
 
-## HW8 - MPLAB Harmony 
+## HW8 - MPLABX Harmony 
+
+HW8 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW8). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW8)
+
+Implement HW7 using Harmony in MPLABX
+
+## HW9 - USB communication between PIC & PC
+
+HW9 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW8). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW9)
+
+## HW10 - MAF, IIR, FIR low pass filtering
+
+HW10 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW10). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW10)
+
+## HW11 - HID USB Mouse
+
+HW11 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW11). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW11)
+
+## HW12 - "Hello World!" Android App
+
+HW12 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW12). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW12)
+
+## HW13 - Color Recognition Android App
+
+HW13 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW13). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW13)
+
+## HW14 - USB communication between Android and PIC
+
+HW14 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW13). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW14)
 
 ## Final Project
+
+### description
+
+build a laser cut/3d printed robot car that can follow rainbow road on the map below using a PIC32 for motor control and an Android phone camera for image processing
+
+* map:
+
+* car body (SolidWorks)
+
+* wheels (OnShape)
+
+* final car
+
+* video demo
+
 
 
 
