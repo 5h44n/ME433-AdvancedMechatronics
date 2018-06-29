@@ -349,57 +349,45 @@ public class MainActivity extends Activity implements TextureView.SurfaceTexture
         final Canvas c = mSurfaceHolder.lockCanvas();
         if (c != null) {
             int limitRed = getRedThresh();
-            int limitBrightness = getBrightnessThresh();
-            int COM = 0;
-            int totalCOM = 0;
-            int[] pixels = new int[bmp.getWidth()]; // pixels[] is the RGBA data
+            int COM;
+            int[] pixels = new int[bmp.getWidth()];     // pixels[] is the RGBA data
+            int startY = 150;                           // which row in the bitmap to analyze to read
 
-            for (int startY = 190; startY < 200; startY++) {
-                bmp.getPixels(pixels, 0, bmp.getWidth(), 0, startY, bmp.getWidth(), 1);
 
-                int sum_mr = 0; // the sum of the mass times the radius
-                int sum_m = 0; // the sum of the masses
-                for (int i = 0; i < bmp.getWidth(); i++) {
-                    if (((red(pixels[i]) - (green(pixels[i]) + blue(pixels[i])) / 2) > -limitRed) && ((red(pixels[i]) - (green(pixels[i]) + blue(pixels[i])) / 2) < limitRed) && (red(pixels[i]) > limitBrightness)) {
-                        pixels[i] = rgb(1, 1, 1); // set the pixel to almost 100% black
+            bmp.getPixels(pixels, 0, bmp.getWidth(), 0, startY, bmp.getWidth(), 1);
 
-                        sum_m = sum_m + green(pixels[i]) + red(pixels[i]) + blue(pixels[i]);
-                        sum_mr = sum_mr + (green(pixels[i]) + red(pixels[i]) + blue(pixels[i])) * i;
-                    }
+            // in the row, see if there is more green than red
+            int sum_mr = 0; // the sum of the mass times the radius
+            int sum_m = 0; // the sum of the masses
+            for (int i = 0; i < bmp.getWidth(); i++) {
+                if (red(pixels[i]) - green(pixels[i]) - blue(pixels[i]) > limitRed - 50) {
+                    pixels[i] = rgb(255, 0, 0); // set the pixel to 100% red
+                    sum_mr = sum_mr + 255 * i;
+                    sum_m = sum_m + 255;
                 }
-                // only use the data if there were a few pixels identified, otherwise you might get a divide by 0 error
-                if (sum_m > 5) {
-                    COM = sum_mr / sum_m;
-                } else {
-                    COM = 0;
-                }
-                totalCOM = totalCOM + COM;
-                bmp.setPixels(pixels, 0, bmp.getWidth(), 0, startY, bmp.getWidth(), 1);
+            }
+            // only use the data if there were a few pixels identified, otherwise you might get a divide by 0 error
+            if (sum_m > 5) {
+                COM = sum_mr / sum_m;
+            } else {
+                COM = 320;
             }
 
-            int avgCOM = (totalCOM)/20;
-
-            //  write COM as text
-            COMTextView.setText("COM: " + avgCOM);
-
-            //  send COM to pic
-            if (sendFlag)   {
-                String sendString = String.valueOf(avgCOM) + '\n';
+            //  send COM to PIC32
+            if (sendFlag) {
+                String sendString = String.valueOf(COM) + '\n';
                 try {
                     sPort.write(sendString.getBytes(), 10); // 10 is the timeout
-                } catch (IOException e) { }
+                } catch (IOException e) {
+                }
             }
 
+            // write the pos as text
+            canvas.drawText("pos = " + COM, 10, 100, paint1);
+            canvas.drawCircle(COM, 150, 5, paint1);
+            c.drawBitmap(bmp, 0, 0, null);
+            mSurfaceHolder.unlockCanvasAndPost(c);
         }
-
-        // draw a circle at some position
-        int pos = 50;
-        canvas.drawCircle(pos, 240, 5, paint1); // x position, y position, diameter, color
-
-        // write the pos as text
-        canvas.drawText("pos = " + pos, 10, 200, paint1);
-        c.drawBitmap(bmp, 0, 0, null);
-        mSurfaceHolder.unlockCanvasAndPost(c);
 
         // calculate the FPS to see how fast the code is running
         long nowtime = System.currentTimeMillis();
@@ -407,13 +395,9 @@ public class MainActivity extends Activity implements TextureView.SurfaceTexture
         mTextView.setText("FPS " + 1000 / diff);
         prevtime = nowtime;
     }
+
     public int getRedThresh() {
         SeekBar seekBar = findViewById(R.id.seekRed);
-        int value = seekBar.getProgress();
-        return value;
-    }
-    public int getBrightnessThresh() {
-        SeekBar seekBar = findViewById(R.id.seekBrightness);
         int value = seekBar.getProgress();
         return value;
     }
