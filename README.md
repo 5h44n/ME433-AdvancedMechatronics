@@ -84,6 +84,8 @@ Implement HW7 using Harmony in MPLABX
 
 HW9 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW8). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW9)
 
+video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW9/CDC_IMU.mp4) (mp4 download required)
+
 ## HW10 - MAF, IIR, FIR low pass filtering
 
 HW10 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW10). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW10)
