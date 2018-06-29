@@ -116,6 +116,8 @@ video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/
 
 HW14 assignment description [here](https://github.com/ndm736/ME433_2018/wiki/HW13). my assignment folder [here](https://github.com/shanexavier313/shaansavarirayan_ME433/tree/master/HW14)
 
+video demo [here](https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW14/Android%20CDC.mp4) (mp4 download required)
+
 ## Final Project
 
 ### description
