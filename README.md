@@ -12,7 +12,14 @@ repo for ME 433 Advanced Mechatronics assignments and projects
 
 ### equipment
 
-PIC32MX250F128B microcontroller
+PIC32MX250F128B microcontroller, LCD, IMU sensor, Android phone
+
+### software
+
+EAGLE CAD, SolidWorks, OnShape
+
+### languages
+C, Java, MATLAB
 
 ## HW1
 
