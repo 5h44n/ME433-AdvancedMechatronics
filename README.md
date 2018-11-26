@@ -47,7 +47,7 @@ checked for errors and Gerber files generated
   
 *board*:
 
-<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/board.png"></a>
+<a href="url"><img src="https://github.com/shanexavier313/shaansavarirayan_ME433/blob/master/HW3/board.png" height = "50%" width = "50%"></a>
 
 ## HW4 - SPI DAC
 
